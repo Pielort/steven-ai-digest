@@ -20,59 +20,130 @@
   <main class="wrap prose">
     <div class="kicker">Daily memo</div>
     <h1>Edition 2026-02-04</h1>
-    <p class="muted">Four items max. Source backed. Written for operators.</p>
+    <p class="muted">Four items max. Source backed. Written for operators. Coverage window: last 7 days.</p>
 
     <section class="card">
       <h2 class="h3">Executive take</h2>
       <p>
-        This page is the permanent URL for today’s edition.
-        Next step is to populate the four items with current, source backed developments from the last seven days.
-        I am keeping the structure tight so the read is fast, but each item will be long form with clear implications.
+        Two themes matter this week.
+        First, the enterprise buyer is shifting from curiosity to procurement.
+        Evidence is showing up in the boring places: compliance artifacts, system cards, and security posture.
+        Second, the production stack is becoming the product.
+        The interesting work is not “best model”, it is cost per token, long context throughput, and the ability to run reliably.
       </p>
     </section>
 
-    <section class="card">
-      <h2 class="h3">Item 1</h2>
-      <p class="muted">Topic headline. One sentence summary. Why it matters.</p>
+    <section class="card" id="item-1">
+      <h2 class="h3">Item 1: OpenAI moves procurement forward with ISO 27001 and fresh system cards</h2>
+      <p class="muted"><b>Thesis:</b> OpenAI is packaging the trust layer, not just the capability layer. This shortens enterprise security review cycles.</p>
+
       <p>
-        Placeholder. This will be replaced with a fully cited update.
+        <b>Evidence:</b> OpenAI’s trust portal notes receipt of an ISO/IEC 27001 certificate scoped to OpenAI’s API, ChatGPT Enterprise, and ChatGPT Edu, with additional control sets referenced.
+        The same portal also points to newly accessible system cards for recently released models.
       </p>
-      <p class="muted">Sources: pending</p>
+
+      <p>
+        <b>Implication:</b> The model race is increasingly gated by procurement friction, not just benchmarks.
+        If your product depends on an LLM in a regulated workflow, the vendor’s compliance surface and disclosure cadence are now part of your roadmap.
+      </p>
+
+      <p>
+        <b>Action:</b> If you are evaluating providers, treat “trust artifacts” as first class requirements.
+        Ask for scope, controls coverage, and how often evaluations and system cards are updated.
+      </p>
+
+      <p class="muted">
+        <b>Sources:</b>
+        <a href="https://trust.openai.com/" target="_blank" rel="noreferrer">trust.openai.com</a>
+      </p>
     </section>
 
-    <section class="card">
-      <h2 class="h3">Item 2</h2>
-      <p class="muted">Topic headline. One sentence summary. Why it matters.</p>
+    <section class="card" id="item-2">
+      <h2 class="h3">Item 2: NVIDIA Rubin reframes the unit of optimization as the rack and the factory</h2>
+      <p class="muted"><b>Thesis:</b> For reasoning and agentic workloads, the economic bottleneck is system level throughput and determinism, not single GPU peak.</p>
+
       <p>
-        Placeholder. This will be replaced with a fully cited update.
+        <b>Evidence:</b> NVIDIA’s Rubin platform write up makes the case for “extreme co design” across compute, networking, security, power delivery, and cooling.
+        It explicitly frames the data center as the unit of compute, then ties that to inference economics like throughput and cost per token.
       </p>
-      <p class="muted">Sources: pending</p>
+
+      <p>
+        <b>Implication:</b> If you sell or operate AI at scale, your competitiveness will be defined by integration skill: model plus serving plus networking plus reliability.
+        The winners will look less like app teams and more like ops plus systems engineering.
+      </p>
+
+      <p>
+        <b>Action:</b> Track your inference stack like a P and L.
+        Measure cost per million tokens by workload class, and separate long context reasoning from short form chat.
+        Architect for the workload you actually have.
+      </p>
+
+      <p class="muted">
+        <b>Sources:</b>
+        <a href="https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/" target="_blank" rel="noreferrer">NVIDIA Technical Blog</a>
+      </p>
     </section>
 
-    <section class="card">
-      <h2 class="h3">Item 3</h2>
-      <p class="muted">Topic headline. One sentence summary. Why it matters.</p>
+    <section class="card" id="item-3">
+      <h2 class="h3">Item 3: NVFP4 becomes a practical lever for inference economics, with a concrete recipe</h2>
+      <p class="muted"><b>Thesis:</b> FP4 class inference is moving from “research curiosity” to “operator playbook”, with distillation based methods that preserve accuracy.</p>
+
       <p>
-        Placeholder. This will be replaced with a fully cited update.
+        <b>Evidence:</b> NVIDIA published details on Nemotron 3 Nano NVFP4 and a training approach called quantization aware distillation.
+        The write up claims NVFP4 enables materially higher FLOPS on Blackwell, and ties the approach to near BF16 accuracy on benchmarks with links to a model card.
       </p>
-      <p class="muted">Sources: pending</p>
+
+      <p>
+        <b>Implication:</b> For teams deploying open models, the quickest path to better unit economics is often not a new model.
+        It is precision, batching, caching, and distillation.
+        Expect more “serving first” releases.
+      </p>
+
+      <p>
+        <b>Action:</b> If you run inference, create a quantization roadmap.
+        Identify which workloads can tolerate small quality tradeoffs, then test NVFP4 or comparable low precision variants with your own evals.
+      </p>
+
+      <p class="muted">
+        <b>Sources:</b>
+        <a href="https://research.nvidia.com/labs/nemotron/nemotron-qad/" target="_blank" rel="noreferrer">NVIDIA Nemotron QAD page</a>,
+        <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4" target="_blank" rel="noreferrer">Model card on Hugging Face</a>,
+        <a href="https://arxiv.org/pdf/2601.20088" target="_blank" rel="noreferrer">Tech report PDF</a>
+      </p>
     </section>
 
-    <section class="card">
-      <h2 class="h3">Item 4</h2>
-      <p class="muted">Topic headline. One sentence summary. Why it matters.</p>
+    <section class="card" id="item-4">
+      <h2 class="h3">Item 4: Recursive Language Models: a credible path to “long prompt” without buying a bigger context window</h2>
+      <p class="muted"><b>Thesis:</b> Long context can be attacked as a systems problem, not just a model size problem. Recursion is one clean pattern.</p>
+
       <p>
-        Placeholder. This will be replaced with a fully cited update.
+        <b>Evidence:</b> The “Recursive Language Models” paper proposes an inference paradigm that treats long prompts as an external environment and recursively calls the model over prompt snippets.
+        The abstract claims inputs up to two orders of magnitude beyond native context windows, and reports large gains from post training a recursive variant.
       </p>
-      <p class="muted">Sources: pending</p>
+
+      <p>
+        <b>Implication:</b> For production, this is a reminder that architecture choices in the orchestration layer can beat raw context spend.
+        The best teams will mix retrieval, summarization, and recursive decomposition instead of paying for maximal context everywhere.
+      </p>
+
+      <p>
+        <b>Action:</b> If you have long document workflows, prototype a recursive splitter.
+        Define a deterministic decomposition policy, then measure quality and cost versus “just increase context”.
+      </p>
+
+      <p class="muted">
+        <b>Sources:</b>
+        <a href="https://arxiv.org/abs/2512.24601" target="_blank" rel="noreferrer">arXiv: Recursive Language Models</a>,
+        <a href="https://github.com/alexzhang13/rlm" target="_blank" rel="noreferrer">Code repository</a>
+      </p>
     </section>
 
     <section class="card">
       <h2 class="h3">Distribution notes</h2>
       <ul class="list">
-        <li>X gets at most 4 posts per day, each mapped to one item.</li>
-        <li>No engagement bait. No hype. No dash punctuation in post copy.</li>
-        <li>Visuals rotate: chart slide, editorial photo treatment, short video.</li>
+        <li>X gets at most 4 posts per day, each mapped to one item above.</li>
+        <li>No engagement bait. No hype. No dash punctuation in X copy.</li>
+        <li>Visuals rotate: chart slide, editorial photo treatment, short memo video.</li>
       </ul>
     </section>
 
