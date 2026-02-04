@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Archive | StevenAiDigest</title>
   <meta name="description" content="Archive of StevenAiDigest editions." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -19,27 +20,76 @@
 
   <main class="wrap prose">
     <h1>Archive</h1>
-    <p class="muted">Permanent links to each daily edition. Four items max. Written like a memo.</p>
+    <p class="muted">Permanent links by date. Built for citation and sharing.</p>
 
-    <section class="card">
-      <h2 class="h3">2026</h2>
-      <ul class="list">
-        <li>
-          <a href="/editions/2026-02-04/">2026-02-04</a>
-          <span class="muted">First edition template</span>
-        </li>
-      </ul>
-    </section>
+    <div class="archive-tools" aria-label="Archive tools">
+      <input id="q" class="search" type="search" placeholder="Search editions (e.g. OpenAI, NVIDIA, quantization)" />
+      <select id="y" class="select" aria-label="Year">
+        <option value="all">All years</option>
+        <option value="2026" selected>2026</option>
+      </select>
+    </div>
+
+    <section class="grid" id="grid" aria-label="Edition list"></section>
+
+    <noscript>
+      <section class="card">
+        <h2 class="h3">2026</h2>
+        <ul class="list">
+          <li><a href="/editions/2026-02-04/">2026-02-04</a> <span class="muted">Four items · operators memo</span></li>
+        </ul>
+      </section>
+    </noscript>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <div class="muted">© <span id="y"></span> StevenAiDigest</div>
+      <div class="muted">© <span id="yy"></span> StevenAiDigest</div>
     </div>
   </footer>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('yy').textContent = new Date().getFullYear();
+
+    const editions = [
+      {
+        date: '2026-02-04',
+        year: '2026',
+        title: 'Edition 2026-02-04',
+        url: '/editions/2026-02-04/',
+        summary: 'OpenAI trust artifacts, NVIDIA Rubin, NVFP4 operator recipe, recursive long prompt.',
+        tags: ['OpenAI','NVIDIA','inference','security','RAG']
+      }
+    ];
+
+    const grid = document.getElementById('grid');
+    const q = document.getElementById('q');
+    const y = document.getElementById('y');
+
+    function render(){
+      const query = (q.value || '').trim().toLowerCase();
+      const year = y.value;
+      const rows = editions
+        .filter(e => year === 'all' || e.year === year)
+        .filter(e => {
+          if (!query) return true;
+          const hay = [e.date, e.title, e.summary, (e.tags||[]).join(' ')].join(' ').toLowerCase();
+          return hay.includes(query);
+        })
+        .sort((a,b) => (a.date < b.date ? 1 : -1));
+
+      grid.innerHTML = rows.map(e => `
+        <a class="tile" href="${e.url}">
+          <div class="k">${e.date}</div>
+          <div class="t">${e.title}</div>
+          <div class="m">${e.summary}</div>
+        </a>
+      `).join('') || `<div class="muted">No matches.</div>`;
+    }
+
+    q.addEventListener('input', render);
+    y.addEventListener('change', render);
+    render();
   </script>
 </body>
 </html>

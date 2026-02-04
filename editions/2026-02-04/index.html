@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Edition 2026-02-04 | StevenAiDigest</title>
   <meta name="description" content="StevenAiDigest daily memo edition for 2026-02-04." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <div class="progress" id="progress"></div>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/">StevenAiDigest</a>
@@ -18,9 +20,15 @@
   </header>
 
   <main class="wrap prose">
+    <a id="top"></a>
     <div class="kicker">Daily memo</div>
     <h1>Edition 2026-02-04</h1>
     <p class="muted">Four items max. Source backed. Written for operators. Coverage window: last 7 days.</p>
+
+    <div class="share-row">
+      <a class="pill" href="https://x.com/intent/tweet?text=StevenAiDigest%20Edition%202026-02-04&url=https%3A%2F%2Fstevenaidigest.netlify.app%2Feditions%2F2026-02-04%2F" target="_blank" rel="noopener">Share on X</a>
+      <a class="pill" href="#" id="copyLink">Copy link</a>
+    </div>
 
     <section class="media-strip" aria-label="Edition visuals">
       <div class="media-tile">
@@ -39,18 +47,20 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2 class="h3">Executive take</h2>
-      <p>
-        Two themes matter this week.
-        First, the enterprise buyer is shifting from curiosity to procurement.
-        Evidence is showing up in the boring places: compliance artifacts, system cards, and security posture.
-        Second, the production stack is becoming the product.
-        The interesting work is not “best model”, it is cost per token, long context throughput, and the ability to run reliably.
-      </p>
-    </section>
+    <div class="edition-grid">
+      <div>
+        <section class="card">
+          <h2 class="h3">Executive take</h2>
+          <p>
+            Two themes matter this week.
+            First, the enterprise buyer is shifting from curiosity to procurement.
+            Evidence is showing up in the boring places: compliance artifacts, system cards, and security posture.
+            Second, the production stack is becoming the product.
+            The interesting work is not “best model”, it is cost per token, long context throughput, and the ability to run reliably.
+          </p>
+        </section>
 
-    <section class="card" id="item-1">
+        <section class="card" id="item-1">
       <h2 class="h3">Item 1: OpenAI moves procurement forward with ISO 27001 and fresh system cards</h2>
       <p class="muted"><b>Thesis:</b> OpenAI is packaging the trust layer, not just the capability layer. This shortens enterprise security review cycles.</p>
 
@@ -164,7 +174,18 @@
       </ul>
     </section>
 
-    <p class="muted"><a href="/archive/">← Back to archive</a></p>
+        <p class="muted"><a href="/archive/">← Back to archive</a></p>
+      </div>
+
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <a href="#item-1">Item 1</a>
+        <a href="#item-2">Item 2</a>
+        <a href="#item-3">Item 3</a>
+        <a href="#item-4">Item 4</a>
+        <a href="#top" id="backTop">Back to top</a>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -175,6 +196,33 @@
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Reading progress
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      prog.style.width = (scrolled / max * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Copy link
+    const copy = document.getElementById('copyLink');
+    if (copy) {
+      copy.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copy.textContent = 'Copied';
+          setTimeout(() => copy.textContent = 'Copy link', 1200);
+        } catch {
+          window.prompt('Copy link', url);
+        }
+      });
+    }
   </script>
 </body>
 </html>
