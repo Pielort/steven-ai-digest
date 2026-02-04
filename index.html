@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="StevenAiDigest — a daily brief on AI breakthroughs, new models, and adjacent tech innovations." />
+  <title>StevenAiDigest</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <div class="logo">S</div>
+      <div>
+        <div class="name">StevenAiDigest</div>
+        <div class="tag">Daily signal on AI breakthroughs, frontier models, and tech innovations that actually matter.</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#today">Today</a>
+      <a href="#archive">Archive</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>AI news is cheap. <span class="em">Signal</span> is scarce.</h1>
+      <p>
+        StevenAiDigest is a concise, source‑backed brief for operators, builders, and investors.
+        No hype cycles. No vague takes. Just what changed, why it matters, and what to do next.
+      </p>
+
+      <div class="cta">
+        <form name="subscribe" method="POST" data-netlify="true" action="/thanks.html" class="form">
+          <input type="hidden" name="form-name" value="subscribe" />
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="note">Free. 4 posts/day on X + a clean daily digest archive here.</div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-h">What you get</div>
+          <ul>
+            <li><b>Breakthrough brief:</b> model releases, benchmarks, capabilities.</li>
+            <li><b>Second‑order lens:</b> compute, chips, regulation, markets.</li>
+            <li><b>Operator focus:</b> implications for workflows and product strategy.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-h">Cadence</div>
+          <ul>
+            <li><b>4 posts/day</b> on X (fast, readable).</li>
+            <li><b>Daily digest</b> published here (with sources).</li>
+            <li><b>Weekly recap</b> (coming next).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="today" class="section">
+      <h2>Today’s Digest</h2>
+      <div class="sub">First edition publishes today. Sources and links will live here.</div>
+      <article class="post">
+        <div class="post-meta">Edition #001 · <span id="date"></span></div>
+        <h3>Launching StevenAiDigest</h3>
+        <p>
+          Most people follow AI like spectators: headlines, vibes, and hot takes.
+          That’s entertainment, not advantage.
+        </p>
+        <p>
+          This digest is built for operators: capability → constraints → deployment.
+          Expect crisp analysis and credible sources.
+        </p>
+        <div class="sources">
+          <div class="sources-h">Sources</div>
+          <ul>
+            <li>Add links here daily (papers, release notes, benchmark reports, product docs).</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="archive" class="section">
+      <h2>Archive</h2>
+      <div class="sub">A clean, chronological record. (We’ll automate this.)</div>
+      <div class="archive">
+        <a class="archive-item" href="#today">
+          <div class="a-date">Edition #001</div>
+          <div class="a-title">Launch: StevenAiDigest</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        Written in a finance‑grade style: clear claims, cited sources, and explicit implications.
+        If you want the edge without the noise, you’re in the right place.
+      </p>
+      <p>
+        Follow on X: <a href="https://x.com/nvystv" target="_blank" rel="noopener">@nvystv</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> StevenAiDigest</div>
+      <div class="fine">Built on Netlify. Email capture uses Netlify Forms.</div>
+    </footer>
+  </main>
+
+  <script>
+    const d = new Date();
+    document.getElementById('year').textContent = String(d.getFullYear());
+    document.getElementById('date').textContent = d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
+  </script>
+</body>
+</html>
