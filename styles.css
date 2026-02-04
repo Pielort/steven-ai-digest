@@ -81,6 +81,15 @@ button:hover{filter:brightness(1.05)}
   .hero-grid{grid-template-columns:1fr}
 }
 
+/* Mobile header cleanup (reduce visual clustering) */
+@media (max-width:560px){
+  .wrap{padding:18px}
+  .tag{display:none}
+  .header{gap:10px}
+  .nav{gap:8px; width:100%; overflow:auto; -webkit-overflow-scrolling:touch; padding-bottom:4px}
+  .nav a{padding:8px 9px; font-size:12px; white-space:nowrap}
+}
+
 /* App-like media + motion */
 .progress{position:fixed; top:0; left:0; height:3px; width:0%; background:linear-gradient(90deg,var(--brand2),var(--brand)); z-index:50}
 .toc{position:sticky; top:76px; align-self:start; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:16px; padding:14px}
