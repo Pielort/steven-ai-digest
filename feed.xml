@@ -11,7 +11,47 @@
       <link>https://stevenaidigest.netlify.app/editions/2026-02-04/</link>
       <guid>https://stevenaidigest.netlify.app/editions/2026-02-04/</guid>
       <pubDate>Wed, 04 Feb 2026 00:00:00 PST</pubDate>
-      <description>OpenAI trust artifacts, NVIDIA Rubin, NVFP4 operator recipe, recursive long prompt.</description>
+      <description>Morning: AI model releases and research breakthroughs. Midday: AI agent breakthroughs and practical workflow tools.</description>
+    </item>
+
+    <item>
+      <title>Edition 2025-12-05</title>
+      <link>https://stevenaidigest.netlify.app/editions/2025-12-05/</link>
+      <guid>https://stevenaidigest.netlify.app/editions/2025-12-05/</guid>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 PST</pubDate>
+      <description>AWS re:Invent packaging: permissions automation, data access, replication, and cost controls as AI primitives.</description>
+    </item>
+
+    <item>
+      <title>Edition 2025-11-18</title>
+      <link>https://stevenaidigest.netlify.app/editions/2025-11-18/</link>
+      <guid>https://stevenaidigest.netlify.app/editions/2025-11-18/</guid>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 PST</pubDate>
+      <description>Gemini 3 ships as a product layer. Distribution and workflow integration tighten the model race.</description>
+    </item>
+
+    <item>
+      <title>Edition 2025-10-06</title>
+      <link>https://stevenaidigest.netlify.app/editions/2025-10-06/</link>
+      <guid>https://stevenaidigest.netlify.app/editions/2025-10-06/</guid>
+      <pubDate>Mon, 06 Oct 2025 00:00:00 PST</pubDate>
+      <description>AMD and OpenAI announce a 6 GW deployment agreement. Compute becomes supply chain and capital structure.</description>
+    </item>
+
+    <item>
+      <title>Edition 2025-09-15</title>
+      <link>https://stevenaidigest.netlify.app/editions/2025-09-15/</link>
+      <guid>https://stevenaidigest.netlify.app/editions/2025-09-15/</guid>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 PST</pubDate>
+      <description>Agents move toward production grade infrastructure: connectivity, policy controls, and observability.</description>
+    </item>
+
+    <item>
+      <title>Edition 2025-08-07</title>
+      <link>https://stevenaidigest.netlify.app/editions/2025-08-07/</link>
+      <guid>https://stevenaidigest.netlify.app/editions/2025-08-07/</guid>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 PST</pubDate>
+      <description>GPT-5 appears in the API with smaller variants. Pricing and routing strategy become the operator edge.</description>
     </item>
 
   </channel>

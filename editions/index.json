@@ -5,7 +5,8 @@
     "title": "Edition 2026-02-04",
     "url": "/editions/2026-02-04/",
     "summary": "Morning: AI model releases & research breakthroughs. Midday: AI agent breakthroughs & practical workflow tools.",
-    "tags": ["OpenAI","NVIDIA","inference","security","RAG","AgenticAI","AISafety","KimiK25"]
+    "tags": ["OpenAI","NVIDIA","inference","security","RAG","AgenticAI","AISafety","KimiK25"],
+    "thumbnail": "/assets/visuals/web/chart-slide.webp"
   },
   {
     "date": "2025-12-05",
@@ -13,7 +14,8 @@
     "title": "Edition 2025-12-05",
     "url": "/editions/2025-12-05/",
     "summary": "AWS re:Invent packaging: permissions automation, data access, replication, and cost controls as AI primitives.",
-    "tags": ["AWS","re:Invent","operations","governance"]
+    "tags": ["AWS","re:Invent","operations","governance"],
+    "thumbnail": "/assets/visuals/web/editorial-square.webp"
   },
   {
     "date": "2025-11-18",
@@ -21,7 +23,8 @@
     "title": "Edition 2025-11-18",
     "url": "/editions/2025-11-18/",
     "summary": "Gemini 3 ships as a product layer. Distribution and workflow integration tighten the model race.",
-    "tags": ["Google","Gemini","multimodal","product"]
+    "tags": ["Google","Gemini","multimodal","product"],
+    "thumbnail": "/assets/visuals/web/chart-slide.webp"
   },
   {
     "date": "2025-10-06",
@@ -29,7 +32,8 @@
     "title": "Edition 2025-10-06",
     "url": "/editions/2025-10-06/",
     "summary": "AMD and OpenAI announce a 6 GW deployment agreement. Compute becomes supply chain and capital structure.",
-    "tags": ["AMD","OpenAI","compute","infrastructure"]
+    "tags": ["AMD","OpenAI","compute","infrastructure"],
+    "thumbnail": "/assets/visuals/web/editorial-square.webp"
   },
   {
     "date": "2025-09-15",
@@ -37,7 +41,8 @@
     "title": "Edition 2025-09-15",
     "url": "/editions/2025-09-15/",
     "summary": "Agents move toward production grade infrastructure: connectivity, policy controls, and observability.",
-    "tags": ["AWS","agents","governance","infrastructure"]
+    "tags": ["AWS","agents","governance","infrastructure"],
+    "thumbnail": "/assets/visuals/web/editorial-square.webp"
   },
   {
     "date": "2025-08-07",
@@ -45,6 +50,7 @@
     "title": "Edition 2025-08-07",
     "url": "/editions/2025-08-07/",
     "summary": "GPT-5 appears in the API with smaller variants. Pricing and routing strategy become the operator edge.",
-    "tags": ["OpenAI","GPT-5","API","economics"]
+    "tags": ["OpenAI","GPT-5","API","economics"],
+    "thumbnail": "/assets/visuals/web/editorial-square.webp"
   }
 ]

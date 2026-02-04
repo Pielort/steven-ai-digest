@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Media Gallery | StevenAiDigest</title>
+  <meta name="description" content="Browse StevenAiDigest visual assets, templates, and media files." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    /* Gallery-specific styles */
+    .gallery-header {
+      margin-bottom: 24px;
+    }
+    
+    .gallery-filters {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 16px 0 24px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 200px;
+      flex: 1;
+    }
+    
+    .filter-label {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    
+    .filter-select {
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      outline: none;
+      font-size: 14px;
+    }
+    
+    .filter-select:focus {
+      border-color: rgba(124, 92, 255, 0.6);
+      box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.15);
+    }
+    
+    .filter-buttons {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+    }
+    
+    .filter-button {
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .filter-button:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(124, 92, 255, 0.28);
+    }
+    
+    .filter-button.active {
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      color: #070a12;
+      border-color: transparent;
+    }
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    
+    .gallery-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 200ms ease, background 200ms ease, border-color 200ms ease;
+    }
+    
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(124, 92, 255, 0.28);
+    }
+    
+    .gallery-media {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+    }
+    
+    .gallery-info {
+      padding: 16px;
+    }
+    
+    .gallery-title {
+      font-weight: 800;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    
+    .gallery-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    
+    .gallery-type {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(124, 92, 255, 0.15);
+      color: var(--brand);
+      font-weight: 600;
+      font-size: 11px;
+    }
+    
+    .gallery-size {
+      font-family: monospace;
+    }
+    
+    .gallery-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 24px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    
+    .media-preview {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    .media-preview img,
+    .media-preview video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .media-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(11, 15, 25, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      opacity: 0;
+      transition: opacity 200ms ease;
+    }
+    
+    .gallery-item:hover .media-play {
+      opacity: 1;
+    }
+    
+    .media-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(11, 15, 25, 0.8);
+      color: var(--text);
+      font-size: 11px;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      }
+      
+      .gallery-filters {
+        flex-direction: column;
+      }
+      
+      .filter-buttons {
+        align-self: flex-start;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">StevenAiDigest</a>
+      <nav class="nav">
+        <a href="/archive/">Archive</a>
+        <a href="/gallery.html" class="active">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <div class="gallery-header">
+      <div class="kicker">Visual Assets</div>
+      <h1>Media Gallery</h1>
+      <p class="muted">Browse and filter StevenAiDigest visual assets, templates, and media files. All assets are optimized for web performance.</p>
+    </div>
+
+    <div class="gallery-filters">
+      <div class="filter-group">
+        <div class="filter-label">Media Type</div>
+        <select id="typeFilter" class="filter-select">
+          <option value="all">All Types</option>
+          <option value="image">Images</option>
+          <option value="video">Videos</option>
+          <option value="template">Templates</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <div class="filter-label">File Format</div>
+        <select id="formatFilter" class="filter-select">
+          <option value="all">All Formats</option>
+          <option value="webp">WebP</option>
+          <option value="png">PNG</option>
+          <option value="jpg">JPG</option>
+          <option value="mp4">MP4</option>
+          <option value="cmd">Scripts</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <div class="filter-label">Sort By</div>
+        <select id="sortFilter" class="filter-select">
+          <option value="name">Name (A-Z)</option>
+          <option value="name-desc">Name (Z-A)</option>
+          <option value="size">Size (Smallest)</option>
+          <option value="size-desc">Size (Largest)</option>
+          <option value="type">Type</option>
+        </select>
+      </div>
+      
+      <div class="filter-buttons">
+        <button id="resetFilters" class="filter-button">Reset</button>
+        <button id="applyFilters" class="filter-button active">Apply</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Gallery items will be populated by JavaScript -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="muted">© <span id="currentYear"></span> StevenAiDigest · Media Gallery v8</div>
+    </div>
+  </footer>
+
+  <script>
+    // Media data - in a real implementation, this could be fetched from a JSON file
+    const mediaItems = [
+      {
+        id: 1,
+        name: "Chart Slide Template",
+        path: "/assets/visuals/web/chart-slide.webp",
+        type: "image",
+        format: "webp",
+        category: "template",
+        size: "19.3 KB",
+        description: "Clean chart presentation template with gradient background"
+      },
+      {
+        id: 2,
+        name: "Editorial Square",
+        path: "/assets/visuals/web/editorial-square.webp",
+        type: "image",
+        format: "webp",
+        category: "template",
+        size: "16.2 KB",
+        description: "Editorial photo treatment template for social media"
+      },
+      {
+        id: 3,
+        name: "Memo Loop Video",
+        path: "/assets/visuals/web/memo-loop.mp4",
+        type: "video",
+        format: "mp4",
+        category: "template",
+        size: "65.1 KB",
+        description: "Animated memo video loop for social media"
+      },
+      {
+        id: 4,
+        name: "Memo Loop Poster",
+        path: "/assets/visuals/web/memo-loop-poster.webp",
+        type: "image",
+        format: "webp",
+        category: "template",
+        size: "12.4 KB",
+        description: "Poster image for memo video"
+      },
+      {
+        id: 5,
+        name: "Memo Loop Poster (JPG)",
+        path: "/assets/visuals/web/memo-loop-poster.jpg",
+        type: "image",
+        format: "jpg",
+        category: "template",
+        size: "30.2 KB",
+        description: "JPG version of memo video poster"
+      },
+      {
+        id: 6,
+        name: "Chart Slide Template (PNG)",
+        path: "/assets/visuals/templates/A_chart_slide_template.png",
+        type: "image",
+        format: "png",
+        category: "source",
+        size: "803.9 KB",
+        description: "High-resolution PNG source template"
+      },
+      {
+        id: 7,
+        name: "Editorial Photo Template (PNG)",
+        path: "/assets/visuals/templates/B_editorial_photo_template.png",
+        type: "image",
+        format: "png",
+        category: "source",
+        size: "447.8 KB",
+        description: "High-resolution editorial template source"
+      },
+      {
+        id: 8,
+        name: "Memo Video Template (MP4)",
+        path: "/assets/visuals/templates/C_memo_video_template.mp4",
+        type: "video",
+        format: "mp4",
+        category: "source",
+        size: "64.8 KB",
+        description: "Source memo video template"
+      },
+      {
+        id: 9,
+        name: "Template Generator Script",
+        path: "/assets/visuals/templates/C_memo_video_template.cmd",
+        type: "script",
+        format: "cmd",
+        category: "tool",
+        size: "1.1 KB",
+        description: "Command script for generating video templates"
+      },
+      {
+        id: 10,
+        name: "Template Generator (Python)",
+        path: "/assets/visuals/templates/generate_templates.py",
+        type: "script",
+        format: "py",
+        category: "tool",
+        size: "6.7 KB",
+        description: "Python script for generating visual templates"
+      }
+    ];
+
+    // DOM elements
+    const galleryGrid = document.getElementById('galleryGrid');
+    const typeFilter = document.getElementById('typeFilter');
+    const formatFilter = document.getElementById('formatFilter');
+    const sortFilter = document.getElementById('sortFilter');
+    const resetButton = document.getElementById('resetFilters');
+    const applyButton = document.getElementById('applyFilters');
+    const currentYear = document.getElementById('currentYear');
+
+    // Set current year
+    currentYear.textContent = new Date().getFullYear();
+
+    // Filter state
+    let currentFilters = {
+      type: 'all',
+      format: 'all',
+      sort: 'name'
+    };
+
+    // Render gallery items
+    function renderGallery(items) {
+      if (items.length === 0) {
+        galleryGrid.innerHTML = `
+          <div class="gallery-empty">
+            No media items match your filters. Try adjusting your selection.
+          </div>
+        `;
+        return;
+      }
+
+      galleryGrid.innerHTML = items.map(item => `
+        <div class="gallery-item" data-id="${item.id}">
+          <div class="media-preview">
+            ${item.type === 'video' ? `
+              <video muted playsinline preload="metadata">
+                <source src="${item.path}" type="video/mp4">
+              </video>
+              <div class="media-play">▶</div>
+            ` : `
+              <img src="${item.path}" alt="${item.name}" loading="lazy">
+            `}
+            <div class="media-badge">${item.format.toUpperCase()}</div>
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-title">${item.name}</div>
+            <div class="muted">${item.description}</div>
+            <div class="gallery-meta">
+              <span class="gallery-type">${item.category}</span>
+              <span class="gallery-size">${item.size}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // Add click handlers for video play
+      document.querySelectorAll('.gallery-item video').forEach(video => {
+        const item = video.closest('.gallery-item');
+        item.addEventListener('click', (e) => {
+          if (e.target.classList.contains('media-play') || e.target === video) {
+            e.preventDefault();
+            if (video.paused) {
+              video.play();
+              item.querySelector('.media-play').style.opacity = '0';
+            } else {
+              video.pause();
+              item.querySelector('.media-play').style.opacity = '1';
+            }
+          }
+        });
+      });
+    }
+
+    // Apply filters
+    function applyFilters() {
+      let filtered = [...mediaItems];
+      
+      // Type filter
+      if (currentFilters.type !== 'all') {
+        filtered = filtered.filter(item => {
+          if (currentFilters.type === 'template') return item.category === 'template';
+          if (currentFilters.type === 'image') return item.type === 'image';
+          if (currentFilters.type === 'video') return item.type === 'video';
+          return true;
+        });
+      }
+      
+      // Format filter
+      if (currentFilters.format !== 'all') {
+        filtered = filtered.filter(item => item.format === currentFilters.format);
+      }
+      
+      // Sort
+      filtered.sort((a, b) => {
+        switch (currentFilters.sort) {
+          case 'name':
+            return a.name.localeCompare(b.name);
+          case 'name-desc':
+            return b.name.localeCompare(a.name);
+          case 'size':
+            return parseFloat(a.size) - parseFloat(b.size);
+          case 'size-desc':
+            return parseFloat(b.size) - parseFloat(a.size);
+          case 'type':
+            return a.type.localeCompare(b.type) || a.format.localeCompare(b.format);
+          default:
+            return 0;
+        }
+      });
+      
+      renderGallery(filtered);
+    }
+
+    // Update filters from UI
+    function updateFilters() {
+      currentFilters = {
+        type: typeFilter.value,
+        format: formatFilter.value,
+        sort: sortFilter.value
+      };
+      applyFilters();
+    }
+
+    // Reset filters
+    function resetFilters() {
+      typeFilter.value = 'all';
+      formatFilter.value = 'all';
+      sortFilter.value = 'name';
+      updateFilters();
+    }
+
+    // Event listeners
+    typeFilter.addEventListener('change', updateFilters);
+    formatFilter.addEventListener('change', updateFilters);
+    sortFilter.addEventListener('change', updateFilters);
+    resetButton.addEventListener('click', resetFilters);
+    applyButton.addEventListener('click', updateFilters);
+
+    // Initial render
+    renderGallery(mediaItems);
+  </script>
+</body>
+</html>
