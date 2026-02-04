@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edition 2025-09-15 | StevenAiDigest</title>
+  <meta name="description" content="StevenAiDigest daily memo edition for 2025-09-15." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">StevenAiDigest</a>
+      <nav class="nav">
+        <a href="/archive/">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <a id="top"></a>
+    <div class="kicker">Daily memo</div>
+    <h1>Edition 2025-09-15</h1>
+    <p class="muted">Backfilled edition. Four items max. Source backed. Written for operators.</p>
+
+    <div class="share-row">
+      <a class="pill" href="https://x.com/intent/tweet?text=StevenAiDigest%20Edition%202025-09-15&url=https%3A%2F%2Fstevenaidigest.netlify.app%2Feditions%2F2025-09-15%2F" target="_blank" rel="noopener">Share on X</a>
+      <a class="pill" href="#" id="copyLink">Copy link</a>
+    </div>
+
+    <section class="media-strip" aria-label="Edition visuals">
+      <div class="media-tile">
+        <div class="media-kicker">Chart slide</div>
+        <img class="media" src="/assets/visuals/web/chart-slide.webp" alt="StevenAiDigest chart slide template" loading="lazy" />
+      </div>
+      <div class="media-tile">
+        <div class="media-kicker">Editorial</div>
+        <img class="media" src="/assets/visuals/web/editorial-square.webp" alt="StevenAiDigest editorial photo treatment template" loading="lazy" />
+      </div>
+      <div class="media-tile">
+        <div class="media-kicker">Memo video</div>
+        <video class="media" controls preload="metadata" poster="/assets/visuals/web/memo-loop-poster.webp">
+          <source src="/assets/visuals/web/memo-loop.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <div class="edition-grid">
+      <div>
+        <section class="card">
+          <h2 class="h3">Executive take</h2>
+          <p>
+            The practical shift this month is simple.
+            Agents are moving from demoware to governed infrastructure.
+            The deciding factors are network placement, identity, policy, and observability.
+            In parallel, regulators are starting to notice that AI infrastructure is not just software.
+          </p>
+        </section>
+
+        <section class="card" id="item-1">
+          <h2 class="h3">Item 1: AWS pushes Bedrock AgentCore toward production grade agents</h2>
+          <p class="muted"><b>Thesis:</b> AgentCore is AWS packaging the boring but decisive layer: secure connectivity, deployment primitives, and controls.</p>
+          <p><b>Evidence:</b> AWS highlights VPC connectivity, PrivateLink, and infrastructure integrations as the enterprise readiness path for agents.</p>
+          <p><b>Implication:</b> The moat in agents is less the prompt and more the operational surface: policies, logs, and safe tool access.</p>
+          <p><b>Action:</b> If you are building agents, define a production checklist: VPC egress, tool allowlists, evaluation gates, and runbook level observability.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-agentcore-securely-deploy-and-operate-ai-agents-at-any-scale/" target="_blank" rel="noreferrer">AWS: Introducing AgentCore</a>,
+            <a href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-s3-amazon-bedrock-agentcore-aws-x-ray-and-more-september-29-2025/" target="_blank" rel="noreferrer">AWS Weekly Roundup (Sep 29, 2025)</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-2">
+          <h2 class="h3">Item 2: Policy controls and evaluations become table stakes for agents</h2>
+          <p class="muted"><b>Thesis:</b> Enterprises will not deploy agents at scale without quality gates and explicit policy controls.</p>
+          <p><b>Evidence:</b> AWS positions evaluations and policy controls as part of removing the final barriers to production deployments.</p>
+          <p><b>Implication:</b> The agent runtime is converging with CI: you ship after tests pass, not after a demo looks good.</p>
+          <p><b>Action:</b> Create an eval harness for your top workflows and define failure modes that block deployment.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://aws.amazon.com/blogs/aws/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents/" target="_blank" rel="noreferrer">AWS: AgentCore evaluations and policy controls</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-3">
+          <h2 class="h3">Item 3: The browser becomes the AI work surface</h2>
+          <p class="muted"><b>Thesis:</b> The default UI for AI is trending toward the browser, because that is where documents, workflows, and identity already live.</p>
+          <p><b>Evidence:</b> Google’s Gemini updates emphasize in app and product integrated experiences rather than standalone tools.</p>
+          <p><b>Implication:</b> Winners ship AI where users already are. The workflow edge beats the model edge for adoption.</p>
+          <p><b>Action:</b> If you run a product, prioritize embedded copilots and safe automation hooks over a separate AI mode.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://blog.google/products/gemini/" target="_blank" rel="noreferrer">Google Gemini product updates</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-4">
+          <h2 class="h3">Item 4: Environmental compliance starts to touch AI infrastructure</h2>
+          <p class="muted"><b>Thesis:</b> Regulation is widening from model behavior to the physical supply chain of AI: cooling, chemicals, power, and siting.</p>
+          <p><b>Evidence:</b> US agencies began signaling prioritized review attention for data center related chemicals and infrastructure externalities.</p>
+          <p><b>Implication:</b> The limiting reagent for AI may be permits and power, not model weights.</p>
+          <p><b>Action:</b> Treat compliance and energy as first class constraints in the compute roadmap.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://www.epa.gov/newsreleases" target="_blank" rel="noreferrer">EPA: News releases (data center related updates)</a>
+          </p>
+        </section>
+
+        <p class="muted"><a href="/archive/">← Back to archive</a></p>
+      </div>
+
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <a href="#item-1">Item 1</a>
+        <a href="#item-2">Item 2</a>
+        <a href="#item-3">Item 3</a>
+        <a href="#item-4">Item 4</a>
+        <a href="#top">Back to top</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="muted">© <span id="y"></span> StevenAiDigest</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      prog.style.width = (scrolled / max * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const copy = document.getElementById('copyLink');
+    if (copy) {
+      copy.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copy.textContent = 'Copied';
+          setTimeout(() => copy.textContent = 'Copy link', 1200);
+        } catch {
+          window.prompt('Copy link', url);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edition 2025-10-06 | StevenAiDigest</title>
+  <meta name="description" content="StevenAiDigest daily memo edition for 2025-10-06." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">StevenAiDigest</a>
+      <nav class="nav">
+        <a href="/archive/">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <a id="top"></a>
+    <div class="kicker">Daily memo</div>
+    <h1>Edition 2025-10-06</h1>
+    <p class="muted">Backfilled edition. Four items max. Source backed. Written for operators.</p>
+
+    <div class="share-row">
+      <a class="pill" href="https://x.com/intent/tweet?text=StevenAiDigest%20Edition%202025-10-06&url=https%3A%2F%2Fstevenaidigest.netlify.app%2Feditions%2F2025-10-06%2F" target="_blank" rel="noopener">Share on X</a>
+      <a class="pill" href="#" id="copyLink">Copy link</a>
+    </div>
+
+    <section class="media-strip" aria-label="Edition visuals">
+      <div class="media-tile"><div class="media-kicker">Chart slide</div><img class="media" src="/assets/visuals/web/chart-slide.webp" alt="Chart slide" loading="lazy" /></div>
+      <div class="media-tile"><div class="media-kicker">Editorial</div><img class="media" src="/assets/visuals/web/editorial-square.webp" alt="Editorial" loading="lazy" /></div>
+      <div class="media-tile"><div class="media-kicker">Memo video</div><video class="media" controls preload="metadata" poster="/assets/visuals/web/memo-loop-poster.webp"><source src="/assets/visuals/web/memo-loop.mp4" type="video/mp4" /></video></div>
+    </section>
+
+    <div class="edition-grid">
+      <div>
+        <section class="card">
+          <h2 class="h3">Executive take</h2>
+          <p>
+            The compute market is widening from vendor selection to capital structure.
+            Major labs are now willing to sign multi year capacity commitments and take equity style optionality.
+            Operators should treat this as a supply chain event, not a product launch.
+          </p>
+        </section>
+
+        <section class="card" id="item-1">
+          <h2 class="h3">Item 1: AMD and OpenAI sign a 6 gigawatt GPU deployment agreement</h2>
+          <p class="muted"><b>Thesis:</b> OpenAI is diversifying compute supply and AMD is breaking into the top tier of AI infrastructure deployment.</p>
+          <p><b>Evidence:</b> AMD describes a multi year, multi generation agreement to power OpenAI infrastructure across AMD Instinct GPUs, sized at 6 GW.</p>
+          <p><b>Implication:</b> The era of single vendor dependency is ending. The winners will be the teams who can operate heterogenous fleets.</p>
+          <p><b>Action:</b> If you run inference or training, build a portability plan: kernels, serving stack, and observability across vendors.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus" target="_blank" rel="noreferrer">AMD press release (Oct 6, 2025)</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-2">
+          <h2 class="h3">Item 2: Open ecosystems move from messaging to economics</h2>
+          <p class="muted"><b>Thesis:</b> The argument for open is now about cost curves and supply resilience, not ideology.</p>
+          <p><b>Evidence:</b> AMD frames the partnership as multi generation deployment, implying a long run roadmap and software alignment.</p>
+          <p><b>Implication:</b> If you cannot switch accelerators without a rewrite, your unit economics are exposed.</p>
+          <p><b>Action:</b> Invest in compiler and kernel portability, and treat performance engineering as a core competency.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://ir.amd.com/news-events/press-releases" target="_blank" rel="noreferrer">AMD investor relations releases</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-3">
+          <h2 class="h3">Item 3: Capacity commitments become the new moat</h2>
+          <p class="muted"><b>Thesis:</b> The frontier labs are securing compute the way airlines secure aircraft and fuel: long term contracts and strategic pre buys.</p>
+          <p><b>Evidence:</b> The deal size is stated in gigawatts, an infrastructure unit, not in GPUs.</p>
+          <p><b>Implication:</b> Smaller teams will need to win via efficiency, batching, quantization, and smarter orchestration rather than raw scale.</p>
+          <p><b>Action:</b> Track cost per token and treat optimization as a weekly discipline.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://ir.amd.com/news-events/press-releases/detail/1265/amd-reports-third-quarter-2025-financial-results" target="_blank" rel="noreferrer">AMD Q3 2025 results (mentions partnership)</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-4">
+          <h2 class="h3">Item 4: Software compatibility becomes the hidden battleground</h2>
+          <p class="muted"><b>Thesis:</b> Chips are the headline. Software and tooling decide deployment velocity.</p>
+          <p><b>Evidence:</b> AMD emphasizes multi generation deployment, which only works if the software stack keeps up.</p>
+          <p><b>Implication:</b> The best positioned vendors are those who ship end to end tooling and libraries operators trust.</p>
+          <p><b>Action:</b> Standardize your serving layer and isolate hardware specific code behind stable interfaces.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://ir.amd.com/news-events/press-releases/detail/1255/amd-unveils-vision-for-an-open-ai-ecosystem-detailing-new-silicon-software-and-systems-at-advancing-ai-2025" target="_blank" rel="noreferrer">AMD: Advancing AI 2025 (ecosystem)</a>
+          </p>
+        </section>
+
+        <p class="muted"><a href="/archive/">← Back to archive</a></p>
+      </div>
+
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <a href="#item-1">Item 1</a>
+        <a href="#item-2">Item 2</a>
+        <a href="#item-3">Item 3</a>
+        <a href="#item-4">Item 4</a>
+        <a href="#top">Back to top</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><div class="muted">© <span id="y"></span> StevenAiDigest</div></div></footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      prog.style.width = (scrolled / max * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const copy = document.getElementById('copyLink');
+    if (copy) {
+      copy.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copy.textContent = 'Copied';
+          setTimeout(() => copy.textContent = 'Copy link', 1200);
+        } catch {
+          window.prompt('Copy link', url);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

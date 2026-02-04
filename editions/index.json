@@ -6,5 +6,29 @@
     "url": "/editions/2026-02-04/",
     "summary": "OpenAI trust artifacts, NVIDIA Rubin, NVFP4 operator recipe, recursive long prompt.",
     "tags": ["OpenAI","NVIDIA","inference","security","RAG"]
+  },
+  {
+    "date": "2025-11-18",
+    "year": "2025",
+    "title": "Edition 2025-11-18",
+    "url": "/editions/2025-11-18/",
+    "summary": "Gemini 3 ships as a product layer. Distribution and workflow integration tighten the model race.",
+    "tags": ["Google","Gemini","multimodal","product"]
+  },
+  {
+    "date": "2025-10-06",
+    "year": "2025",
+    "title": "Edition 2025-10-06",
+    "url": "/editions/2025-10-06/",
+    "summary": "AMD and OpenAI announce a 6 GW deployment agreement. Compute becomes supply chain and capital structure.",
+    "tags": ["AMD","OpenAI","compute","infrastructure"]
+  },
+  {
+    "date": "2025-09-15",
+    "year": "2025",
+    "title": "Edition 2025-09-15",
+    "url": "/editions/2025-09-15/",
+    "summary": "Agents move toward production grade infrastructure: connectivity, policy controls, and observability.",
+    "tags": ["AWS","agents","governance","infrastructure"]
   }
 ]
