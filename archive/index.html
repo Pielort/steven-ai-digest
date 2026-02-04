@@ -88,13 +88,27 @@
         })
         .sort((a,b) => (a.date < b.date ? 1 : -1));
 
-      grid.innerHTML = rows.map(e => `
-        <a class="tile" href="${e.url}">
-          <div class="k">${e.date}</div>
-          <div class="t">${e.title}</div>
-          <div class="m">${e.summary}</div>
+      grid.innerHTML = rows.map(e => {
+        const hasThumbnail = e.thumbnail;
+        const thumbnailUrl = e.thumbnail || '/assets/visuals/web/chart-slide.webp';
+        const tags = e.tags || [];
+        
+        return `
+        <a class="tile ${hasThumbnail ? 'has-thumbnail' : ''}" href="${e.url}">
+          <div class="tile-content">
+            <div class="k">${e.date}</div>
+            <div class="t">${e.title}</div>
+            <div class="m">${e.summary}</div>
+            ${tags.length > 0 ? `
+            <div class="tags">
+              ${tags.slice(0, 3).map(tag => `<span class="tag-pill">${tag}</span>`).join('')}
+              ${tags.length > 3 ? `<span class="tag-pill">+${tags.length - 3}</span>` : ''}
+            </div>
+            ` : ''}
+          </div>
+          ${hasThumbnail ? `<img class="thumbnail" src="${thumbnailUrl}" alt="${e.title}" loading="lazy" />` : ''}
         </a>
-      `).join('') || `<div class="muted">No matches.</div>`;
+      `}).join('') || `<div class="muted">No matches.</div>`;
     }
 
     q.addEventListener('input', render);

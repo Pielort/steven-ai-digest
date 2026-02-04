@@ -101,6 +101,13 @@ button:hover{filter:brightness(1.05)}
 .tile .k{font-size:12px; color:var(--muted); font-weight:800; letter-spacing:0.12em; text-transform:uppercase}
 .tile .t{margin-top:8px; font-weight:800}
 .tile .m{margin-top:6px; color:var(--muted); line-height:1.55}
+.tile .tags{margin-top:8px; display:flex; flex-wrap:wrap; gap:6px}
+.tag-pill{display:inline-block; padding:4px 8px; border-radius:999px; background:rgba(124,92,255,0.12); color:var(--brand); font-size:11px; font-weight:600; text-decoration:none; border:1px solid rgba(124,92,255,0.2)}
+.tag-pill:hover{background:rgba(124,92,255,0.18); border-color:rgba(124,92,255,0.4)}
+.tile .thumbnail{width:100%; height:120px; object-fit:cover; border-radius:12px; margin-top:12px; border:1px solid rgba(255,255,255,0.10); opacity:0.9}
+.tile.has-thumbnail{display:grid; grid-template-columns: 1fr 120px; gap:14px; align-items:start}
+.tile.has-thumbnail .tile-content{min-width:0}
+.tile.has-thumbnail .thumbnail{width:120px; height:120px; margin:0}
 
 @media (max-width:900px){
   .edition-grid{grid-template-columns:1fr}
