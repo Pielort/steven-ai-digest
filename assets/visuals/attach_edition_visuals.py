@@ -51,16 +51,52 @@ SOURCES: dict[str, Source] = {
         license_url="https://creativecommons.org/licenses/by-sa/3.0/",
         source_page="https://commons.wikimedia.org/wiki/File:ASUS_NVIDIA_GeForce_210_silent_graphics_card_with_HDMI.JPG",
     ),
+    # Googleplex / Android sculptures (Gemini distribution context)
+    "android_googleplex": Source(
+        url="https://upload.wikimedia.org/wikipedia/commons/f/f6/Android_building_and_sculptures.jpg",
+        title="Android building and sculptures",
+        author="Runner1928",
+        license_name="CC BY-SA (see source page)",
+        license_url="https://commons.wikimedia.org/wiki/File:Android_building_and_sculptures.jpg",
+        source_page="https://commons.wikimedia.org/wiki/File:Android_building_and_sculptures.jpg",
+    ),
+    # AMD die shot (compute/capex context)
+    "amd_k5_die": Source(
+        url="https://upload.wikimedia.org/wikipedia/commons/3/35/AMD_K5_PR100_die.JPG",
+        title="AMD K5 PR100 die",
+        author="Pauli Rautakorpi (Birdman86)",
+        license_name="CC BY-SA (see source page)",
+        license_url="https://commons.wikimedia.org/wiki/File:AMD_K5_PR100_die.JPG",
+        source_page="https://commons.wikimedia.org/wiki/File:AMD_K5_PR100_die.JPG",
+    ),
+    # Server rack cabling (ops/observability/infra)
+    "rack_spaghetti": Source(
+        url="https://upload.wikimedia.org/wikipedia/commons/e/ea/Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg",
+        title="Server Rack with Spaghetti-Like Mass of Network Cables",
+        author="Kim Scarborough",
+        license_name="CC BY-SA (see source page)",
+        license_url="https://commons.wikimedia.org/wiki/File:Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg",
+        source_page="https://commons.wikimedia.org/wiki/File:Server_Rack_with_Spaghetti-Like_Mass_of_Network_Cables.jpg",
+    ),
+    # Laptop (developer workflows)
+    "laptop_pc": Source(
+        url="https://upload.wikimedia.org/wikipedia/commons/b/b6/Laptop_PC.JPG",
+        title="Laptop PC (Microsoft Surface Pro)",
+        author="KK IN HK",
+        license_name="CC BY-SA (see source page)",
+        license_url="https://commons.wikimedia.org/wiki/File:Laptop_PC.JPG",
+        source_page="https://commons.wikimedia.org/wiki/File:Laptop_PC.JPG",
+    ),
 }
 
 # Map edition dates to a chosen source.
 EDITION_SOURCE = {
     "2026-02-04": "geforce_210",
     "2025-12-05": "datacenter_racks",
-    "2025-11-18": "geforce_210",
-    "2025-10-06": "datacenter_racks",
-    "2025-09-15": "datacenter_racks",
-    "2025-08-07": "geforce_210",
+    "2025-11-18": "android_googleplex",
+    "2025-10-06": "amd_k5_die",
+    "2025-09-15": "rack_spaghetti",
+    "2025-08-07": "laptop_pc",
 }
 
 
