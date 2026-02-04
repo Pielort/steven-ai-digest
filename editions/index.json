@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-02-04",
+    "year": "2026",
+    "title": "Edition 2026-02-04",
+    "url": "/editions/2026-02-04/",
+    "summary": "OpenAI trust artifacts, NVIDIA Rubin, NVFP4 operator recipe, recursive long prompt.",
+    "tags": ["OpenAI","NVIDIA","inference","security","RAG"]
+  }
+]

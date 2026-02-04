@@ -51,20 +51,31 @@
   <script>
     document.getElementById('yy').textContent = new Date().getFullYear();
 
-    const editions = [
-      {
-        date: '2026-02-04',
-        year: '2026',
-        title: 'Edition 2026-02-04',
-        url: '/editions/2026-02-04/',
-        summary: 'OpenAI trust artifacts, NVIDIA Rubin, NVFP4 operator recipe, recursive long prompt.',
-        tags: ['OpenAI','NVIDIA','inference','security','RAG']
+    async function loadEditions(){
+      try {
+        const res = await fetch('/editions/index.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('index fetch failed');
+        const data = await res.json();
+        return Array.isArray(data) ? data : (data.editions || []);
+      } catch (e) {
+        return [
+          {
+            date: '2026-02-04',
+            year: '2026',
+            title: 'Edition 2026-02-04',
+            url: '/editions/2026-02-04/',
+            summary: 'OpenAI trust artifacts, NVIDIA Rubin, NVFP4 operator recipe, recursive long prompt.',
+            tags: ['OpenAI','NVIDIA','inference','security','RAG']
+          }
+        ];
       }
-    ];
+    }
 
     const grid = document.getElementById('grid');
     const q = document.getElementById('q');
     const y = document.getElementById('y');
+
+    let editions = [];
 
     function render(){
       const query = (q.value || '').trim().toLowerCase();
@@ -89,7 +100,17 @@
 
     q.addEventListener('input', render);
     y.addEventListener('change', render);
-    render();
+
+    (async () => {
+      editions = await loadEditions();
+      // hydrate year dropdown
+      const years = Array.from(new Set(editions.map(e => e.year))).sort().reverse();
+      if (years.length) {
+        y.innerHTML = '<option value="all">All years</option>' + years.map(yy => `<option value="${yy}">${yy}</option>`).join('');
+        y.value = years[0];
+      }
+      render();
+    })();
   </script>
 </body>
 </html>
