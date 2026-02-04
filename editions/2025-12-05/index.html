@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edition 2025-12-05 | StevenAiDigest</title>
+  <meta name="description" content="StevenAiDigest daily memo edition for 2025-12-05." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">StevenAiDigest</a>
+      <nav class="nav"><a href="/archive/">Archive</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <a id="top"></a>
+    <div class="kicker">Daily memo</div>
+    <h1>Edition 2025-12-05</h1>
+    <p class="muted">Backfilled edition. Four items max. Source backed. Written for operators.</p>
+
+    <div class="share-row">
+      <a class="pill" href="https://x.com/intent/tweet?text=StevenAiDigest%20Edition%202025-12-05&url=https%3A%2F%2Fstevenaidigest.netlify.app%2Feditions%2F2025-12-05%2F" target="_blank" rel="noopener">Share on X</a>
+      <a class="pill" href="#" id="copyLink">Copy link</a>
+    </div>
+
+    <section class="media-strip" aria-label="Edition visuals">
+      <div class="media-tile"><div class="media-kicker">Chart slide</div><img class="media" src="/assets/visuals/web/chart-slide.webp" alt="Chart slide" loading="lazy" /></div>
+      <div class="media-tile"><div class="media-kicker">Editorial</div><img class="media" src="/assets/visuals/web/editorial-square.webp" alt="Editorial" loading="lazy" /></div>
+      <div class="media-tile"><div class="media-kicker">Memo video</div><video class="media" controls preload="metadata" poster="/assets/visuals/web/memo-loop-poster.webp"><source src="/assets/visuals/web/memo-loop.mp4" type="video/mp4" /></video></div>
+    </section>
+
+    <div class="edition-grid">
+      <div>
+        <section class="card">
+          <h2 class="h3">Executive take</h2>
+          <p>
+            The cloud vendors are turning AI into a systems engineering discipline.
+            The center of gravity is security, permissions, and data gravity.
+            Re:Invent is a reminder that the winning stacks are the ones that reduce integration tax.
+          </p>
+        </section>
+
+        <section class="card" id="item-1">
+          <h2 class="h3">Item 1: IAM Policy Autopilot formalizes least privilege as a developer workflow</h2>
+          <p class="muted"><b>Thesis:</b> AI coding assistants only work in production if permissions and policy are first class and machine readable.</p>
+          <p><b>Evidence:</b> AWS highlights IAM Policy Autopilot as an open source MCP server that analyzes code and generates valid IAM policies.</p>
+          <p><b>Implication:</b> The real blocker for agents is permissions. This is infrastructure to unblock safe automation.</p>
+          <p><b>Action:</b> Standardize IAM generation and audit as part of CI. Do not hand craft policies for agent tooling.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-aws-reinvent-2025/" target="_blank" rel="noreferrer">AWS: Top announcements of re:Invent 2025</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-2">
+          <h2 class="h3">Item 2: Data access patterns matter more than raw model capability</h2>
+          <p class="muted"><b>Thesis:</b> The enterprise bottleneck is moving data to where inference happens without copying and without new security holes.</p>
+          <p><b>Evidence:</b> AWS highlights FSx for NetApp ONTAP integration with S3 to access file system data through S3 without moving it.</p>
+          <p><b>Implication:</b> “Bring AI to the data” wins. Storage and governance are now AI primitives.</p>
+          <p><b>Action:</b> Map data gravity for your top workflows and prioritize architectures that avoid data duplication.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-aws-reinvent-2025/" target="_blank" rel="noreferrer">AWS: Top announcements of re:Invent 2025</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-3">
+          <h2 class="h3">Item 3: S3 Tables, replication, and tiering point to analytics first AI stacks</h2>
+          <p class="muted"><b>Thesis:</b> AI pipelines are collapsing into data systems. The cost battle is storage and movement, not just tokens.</p>
+          <p><b>Evidence:</b> AWS highlights replication support and Intelligent Tiering for S3 Tables as part of cost optimization and simpler multi region operation.</p>
+          <p><b>Implication:</b> The cheapest AI system is the one that keeps data organized and close to compute.</p>
+          <p><b>Action:</b> Treat storage tiering and replication as part of your AI P and L.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-aws-reinvent-2025/" target="_blank" rel="noreferrer">AWS: Top announcements of re:Invent 2025</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-4">
+          <h2 class="h3">Item 4: The re:Invent pattern is clear: packaging operational excellence</h2>
+          <p class="muted"><b>Thesis:</b> Cloud AI differentiation is increasingly operational. The best product is the one that reduces operational risk.</p>
+          <p><b>Evidence:</b> The re:Invent summary emphasizes tools that make permissions, storage access, and cost controls simpler.</p>
+          <p><b>Implication:</b> AI buyers are now operators. “Works reliably” is more valuable than “wins a benchmark”.</p>
+          <p><b>Action:</b> Evaluate vendors on their ops surface: audit logs, deployment tooling, and governance features.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-aws-reinvent-2025/" target="_blank" rel="noreferrer">AWS: Top announcements of re:Invent 2025</a>
+          </p>
+        </section>
+
+        <p class="muted"><a href="/archive/">← Back to archive</a></p>
+      </div>
+
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <a href="#item-1">Item 1</a>
+        <a href="#item-2">Item 2</a>
+        <a href="#item-3">Item 3</a>
+        <a href="#item-4">Item 4</a>
+        <a href="#top">Back to top</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><div class="muted">© <span id="y"></span> StevenAiDigest</div></div></footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      prog.style.width = (scrolled / max * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const copy = document.getElementById('copyLink');
+    if (copy) {
+      copy.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copy.textContent = 'Copied';
+          setTimeout(() => copy.textContent = 'Copy link', 1200);
+        } catch {
+          window.prompt('Copy link', url);
+        }
+      });
+    }
+  </script>
+</body>
+</html>

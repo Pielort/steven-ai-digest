@@ -107,7 +107,7 @@
       const years = Array.from(new Set(editions.map(e => e.year))).sort().reverse();
       if (years.length) {
         y.innerHTML = '<option value="all">All years</option>' + years.map(yy => `<option value="${yy}">${yy}</option>`).join('');
-        y.value = years[0];
+        y.value = 'all';
       }
       render();
     })();

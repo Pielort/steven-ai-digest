@@ -24,11 +24,43 @@
     "tags": ["AMD","OpenAI","compute","infrastructure"]
   },
   {
+    "date": "2025-12-05",
+    "year": "2025",
+    "title": "Edition 2025-12-05",
+    "url": "/editions/2025-12-05/",
+    "summary": "AWS re:Invent packaging: permissions automation, data access, replication, and cost controls as AI primitives.",
+    "tags": ["AWS","re:Invent","operations","governance"]
+  },
+  {
+    "date": "2025-11-18",
+    "year": "2025",
+    "title": "Edition 2025-11-18",
+    "url": "/editions/2025-11-18/",
+    "summary": "Gemini 3 ships as a product layer. Distribution and workflow integration tighten the model race.",
+    "tags": ["Google","Gemini","multimodal","product"]
+  },
+  {
+    "date": "2025-10-06",
+    "year": "2025",
+    "title": "Edition 2025-10-06",
+    "url": "/editions/2025-10-06/",
+    "summary": "AMD and OpenAI announce a 6 GW deployment agreement. Compute becomes supply chain and capital structure.",
+    "tags": ["AMD","OpenAI","compute","infrastructure"]
+  },
+  {
     "date": "2025-09-15",
     "year": "2025",
     "title": "Edition 2025-09-15",
     "url": "/editions/2025-09-15/",
     "summary": "Agents move toward production grade infrastructure: connectivity, policy controls, and observability.",
     "tags": ["AWS","agents","governance","infrastructure"]
+  },
+  {
+    "date": "2025-08-07",
+    "year": "2025",
+    "title": "Edition 2025-08-07",
+    "url": "/editions/2025-08-07/",
+    "summary": "GPT-5 appears in the API with smaller variants. Pricing and routing strategy become the operator edge.",
+    "tags": ["OpenAI","GPT-5","API","economics"]
   }
 ]

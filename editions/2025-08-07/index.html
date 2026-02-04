@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Edition 2025-08-07 | StevenAiDigest</title>
+  <meta name="description" content="StevenAiDigest daily memo edition for 2025-08-07." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">StevenAiDigest</a>
+      <nav class="nav"><a href="/archive/">Archive</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <a id="top"></a>
+    <div class="kicker">Daily memo</div>
+    <h1>Edition 2025-08-07</h1>
+    <p class="muted">Backfilled edition. Four items max. Source backed. Written for operators.</p>
+
+    <div class="share-row">
+      <a class="pill" href="https://x.com/intent/tweet?text=StevenAiDigest%20Edition%202025-08-07&url=https%3A%2F%2Fstevenaidigest.netlify.app%2Feditions%2F2025-08-07%2F" target="_blank" rel="noopener">Share on X</a>
+      <a class="pill" href="#" id="copyLink">Copy link</a>
+    </div>
+
+    <section class="media-strip" aria-label="Edition visuals">
+      <div class="media-tile"><div class="media-kicker">Chart slide</div><img class="media" src="/assets/visuals/web/chart-slide.webp" alt="Chart slide" loading="lazy" /></div>
+      <div class="media-tile"><div class="media-kicker">Editorial</div><img class="media" src="/assets/visuals/web/editorial-square.webp" alt="Editorial" loading="lazy" /></div>
+      <div class="media-tile"><div class="media-kicker">Memo video</div><video class="media" controls preload="metadata" poster="/assets/visuals/web/memo-loop-poster.webp"><source src="/assets/visuals/web/memo-loop.mp4" type="video/mp4" /></video></div>
+    </section>
+
+    <div class="edition-grid">
+      <div>
+        <section class="card">
+          <h2 class="h3">Executive take</h2>
+          <p>
+            The model race is now a product and pricing race.
+            The most important signal is not that a new model exists.
+            It is that it becomes available in the default developer surfaces.
+            That is when experiments become budgets.
+          </p>
+        </section>
+
+        <section class="card" id="item-1">
+          <h2 class="h3">Item 1: GPT-5 lands in the API alongside smaller variants</h2>
+          <p class="muted"><b>Thesis:</b> Availability in the API is the real release event for operators. It turns capability into a deployable dependency.</p>
+          <p><b>Evidence:</b> OpenAI’s developer community announcement positions GPT-5 as a top coding model and publishes pricing and usage details.</p>
+          <p><b>Implication:</b> If the price curve improves, the adoption curve steepens. The constraint becomes evaluation and governance rather than access.</p>
+          <p><b>Action:</b> Build an internal eval harness for your top workflows and record cost per task before you scale usage.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://community.openai.com/t/gpt-5-gpt-5-mini-and-gpt-5-nano-now-available-in-the-api/1337048" target="_blank" rel="noreferrer">OpenAI Developer Community: GPT-5 now available in the API</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-2">
+          <h2 class="h3">Item 2: The release cadence shifts to a portfolio strategy</h2>
+          <p class="muted"><b>Thesis:</b> A flagship model plus smaller variants is an explicit segmentation strategy, not a research artifact.</p>
+          <p><b>Evidence:</b> The same announcement pairs GPT-5 with mini and nano variants, creating a performance to cost ladder.</p>
+          <p><b>Implication:</b> Teams will increasingly route requests by workload class. One model will not dominate the full stack.</p>
+          <p><b>Action:</b> Define a router policy: cheapest model that passes your evals for each task family.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://community.openai.com/t/gpt-5-gpt-5-mini-and-gpt-5-nano-now-available-in-the-api/1337048" target="_blank" rel="noreferrer">OpenAI Developer Community</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-3">
+          <h2 class="h3">Item 3: Developer experience is now part of the model moat</h2>
+          <p class="muted"><b>Thesis:</b> The winning model is the one with stable docs, predictable pricing, and clean operational behavior.</p>
+          <p><b>Evidence:</b> The API announcement is packaged with clear pricing and usage notes, aimed at production adoption.</p>
+          <p><b>Implication:</b> Pure benchmark leadership is no longer sufficient to win enterprise workloads.</p>
+          <p><b>Action:</b> Choose vendors based on operational transparency: incident history, eval disclosures, and versioning practices.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://community.openai.com/t/gpt-5-gpt-5-mini-and-gpt-5-nano-now-available-in-the-api/1337048" target="_blank" rel="noreferrer">OpenAI Developer Community</a>
+          </p>
+        </section>
+
+        <section class="card" id="item-4">
+          <h2 class="h3">Item 4: Cost discipline becomes the competitive edge</h2>
+          <p class="muted"><b>Thesis:</b> The most durable advantage is unit economics. The new default is continuous optimization, not model switching.</p>
+          <p><b>Evidence:</b> Pricing and cache discounts are emphasized, which is operator language, not research language.</p>
+          <p><b>Implication:</b> Teams that instrument cost per outcome will outcompete teams that chase model headlines.</p>
+          <p><b>Action:</b> Start tracking cost per workflow outcome now. Make it a weekly report.</p>
+          <p class="muted"><b>Sources:</b>
+            <a href="https://community.openai.com/t/gpt-5-gpt-5-mini-and-gpt-5-nano-now-available-in-the-api/1337048" target="_blank" rel="noreferrer">OpenAI Developer Community</a>
+          </p>
+        </section>
+
+        <p class="muted"><a href="/archive/">← Back to archive</a></p>
+      </div>
+
+      <aside class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <a href="#item-1">Item 1</a>
+        <a href="#item-2">Item 2</a>
+        <a href="#item-3">Item 3</a>
+        <a href="#item-4">Item 4</a>
+        <a href="#top">Back to top</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><div class="muted">© <span id="y"></span> StevenAiDigest</div></div></footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      prog.style.width = (scrolled / max * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    const copy = document.getElementById('copyLink');
+    if (copy) {
+      copy.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const url = window.location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          copy.textContent = 'Copied';
+          setTimeout(() => copy.textContent = 'Copy link', 1200);
+        } catch {
+          window.prompt('Copy link', url);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
