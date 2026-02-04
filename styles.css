@@ -78,4 +78,28 @@ button:hover{filter:brightness(1.05)}
   .hero h1{font-size:36px}
   .cards{grid-template-columns:1fr}
   .form{flex-direction:column}
+  .hero-grid{grid-template-columns:1fr}
+}
+
+/* App-like media + motion */
+.hero-grid{display:grid; grid-template-columns: 1.2fr 0.8fr; gap:18px; align-items:start}
+.hero-copy{min-width:0}
+.hero-media{position:relative}
+.media-card{background:rgba(255,255,255,0.04); border:1px solid var(--line); border-radius:18px; padding:14px; box-shadow: 0 18px 50px rgba(0,0,0,0.35)}
+.media-kicker{font-size:12px; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); margin:2px 0 10px}
+.media{width:100%; border-radius:14px; display:block; border:1px solid rgba(255,255,255,0.10)}
+.media-caption{color:var(--muted); font-size:12px; line-height:1.5; margin-top:10px}
+
+.card-link{text-decoration:none; display:block; transition: transform 140ms ease, background 140ms ease, border-color 140ms ease}
+.card-link:hover{transform: translateY(-2px); background:rgba(255,255,255,0.06); border-color: rgba(124,92,255,0.28)}
+.card-p{color:var(--muted); font-size:13px; margin-top:4px}
+.thumbs{display:flex; gap:10px; margin-top:12px}
+.thumb{width:100%; max-width:160px; height:auto; border-radius:14px; border:1px solid rgba(255,255,255,0.10); opacity:0.95}
+
+.media-strip{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px; margin:18px 0 12px}
+.media-tile{background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:16px; padding:12px}
+
+@media (max-width:820px){
+  .media-strip{grid-template-columns:1fr}
+  .thumb{max-width:100%}
 }
