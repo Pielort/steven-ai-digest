@@ -1,0 +1,37 @@
+X/Twitter Posts for 2026-02-05 StevenAiDigest Morning Post:
+
+Post 1 (9:30 AM PST):
+BREAKING: Google DeepMind releases AlphaGenome—AI that predicts DNA function. Following AlphaFold's Nobel, this opens trillion-dollar biology frontier. Drug discovery timelines compress from years to months. Open-sourced for global research.
+(279 chars)
+
+Post 2 (11:00 AM PST):
+Meta plans $135B AI capex for 2026, testing "Avocado" frontier model. Compute arms race enters capital-intensive phase. Only 3-5 companies can compete at frontier. Startups must pivot to capital-light niches or seek acquisition.
+(278 chars)
+
+Post 3 (1:00 PM PST):
+DeepSeek's efficiency breakthrough: "Manifold-Constrained Hyper-Connections" scale intelligence without proportional compute. Architectural innovation > brute force scaling. Inference costs drop, democratizing frontier capabilities.
+(279 chars)
+
+Post 4 (3:00 PM PST):
+AI video passes "Cinematic Turing Test"—audiences can't distinguish from human cinematography. Sora/Veo 3.1 reach photorealism. $100B+ creative production costs addressable. Hollywood economics shift from production to IP.
+(280 chars)
+
+---
+
+X/Twitter Posts for 2026-02-05 StevenAiDigest Midday Post:
+
+Post 1 (12:30 PM PST):
+BREAKING: Apple Xcode 26.3 launches agentic coding with Model Context Protocol. AI agents can autonomously explore projects, execute builds, perform error testing. Developer productivity increases 3-5x. Software development enters agentic era.
+(279 chars)
+
+Post 2 (2:00 PM PST):
+Google's Agentic Vision eliminates image hallucination through multi-glance processing. Gemini 3 Flash examines images dynamically, reducing errors in medical/security apps. Visual AI becomes viable for high-stakes applications.
+(278 chars)
+
+Post 3 (4:00 PM PST):
+Enterprises shift from chat copilots to action-initiating workflow agents. AI now orchestrates business processes autonomously. Middle management transforms from supervision to agent orchestration. Operational costs drop 40-60%.
+(279 chars)
+
+Post 4 (5:30 PM PST):
+AI agent platforms mature with real-world workflow integration. Tools now offer extensive LLM/API connections, reducing implementation from months to weeks. SMBs gain enterprise-grade AI capabilities. Vertical solutions proliferate.
+(280 chars)

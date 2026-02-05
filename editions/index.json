@@ -1,11 +1,20 @@
 [
   {
+    "date": "2026-02-05",
+    "year": "2026",
+    "title": "Edition 2026-02-05",
+    "url": "/editions/2026-02-05/",
+    "summary": "Morning: AI biology breakthrough with AlphaGenome, compute arms race escalation with Meta's $135B capex, efficiency innovations from DeepSeek, and synthetic media reaching photorealism. Midday: Practical AI tool/agent workflows—Apple Xcode 26.3 agentic coding, Google's Agentic Vision, enterprise shift to action-initiating agents, AI agent platform maturation.",
+    "tags": ["Google","DeepMind","AlphaGenome","Meta","Compute","DeepSeek","Efficiency","SyntheticMedia","AIvideo","Biology","Capex","Architecture","Apple","Xcode","AgenticCoding","ModelContextProtocol","Gemini","AgenticVision","WorkflowAgents","EnterpriseAI","AIAgents","Platforms"],
+    "thumbnail": "/assets/visuals/editions/2026-02-05/thumb.webp"
+  },
+  {
     "date": "2026-02-04",
     "year": "2026",
     "title": "Edition 2026-02-04",
     "url": "/editions/2026-02-04/",
-    "summary": "Morning: AI model releases & research breakthroughs. Midday: AI agent breakthroughs & practical workflow tools. Afternoon: Tech innovation adjacent (chips, robotics, regulation, funding).",
-    "tags": ["OpenAI","NVIDIA","inference","security","RAG","AgenticAI","AISafety","KimiK25","TSMC","Tesla","Robotics","AIRegulation","Semiconductors"],
+    "summary": "Morning: AI model releases & research breakthroughs. Midday: AI agent breakthroughs & practical workflow tools. Afternoon: Tech innovation adjacent (chips, robotics, regulation, funding). Evening: Strategic AI breakthroughs with market lens (SpaceX-xAI merger, world models race, agentic AI).",
+    "tags": ["OpenAI","NVIDIA","inference","security","RAG","AgenticAI","AISafety","KimiK25","TSMC","Tesla","Robotics","AIRegulation","Semiconductors","SpaceX","xAI","WorldModels","VerticalIntegration"],
     "thumbnail": "/assets/visuals/editions/2026-02-04/thumb.webp"
   },
   {
