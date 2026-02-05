@@ -15,7 +15,7 @@ from io import BytesIO
 from pathlib import Path
 
 import requests
-from PIL import Image
+from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "assets" / "visuals" / "editions"
@@ -110,7 +110,9 @@ def download(url: str) -> bytes:
 
 
 def make_thumb(src_bytes: bytes, out_path: Path, size=(1280, 720)):
-    img = Image.open(BytesIO(src_bytes)).convert("RGB")
+    img = Image.open(BytesIO(src_bytes))
+    # Respect EXIF orientation so thumbnails don't render upside down on mobile.
+    img = ImageOps.exif_transpose(img).convert("RGB")
 
     # center-crop to target aspect
     tw, th = size
