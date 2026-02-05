@@ -35,3 +35,23 @@ Enterprises shift from chat copilots to action-initiating workflow agents. AI no
 Post 4 (5:30 PM PST):
 AI agent platforms mature with real-world workflow integration. Tools now offer extensive LLM/API connections, reducing implementation from months to weeks. SMBs gain enterprise-grade AI capabilities. Vertical solutions proliferate.
 (280 chars)
+
+---
+
+X/Twitter Posts for 2026-02-05 StevenAiDigest Afternoon Post:
+
+Post 1 (6:30 PM PST):
+Edge AI hardware market projected to reach $248B by 2035. Specialized chips enable real-time processing without cloud dependency. Privacy-sensitive applications (healthcare, defense) adopt at scale. Compute shifts from cloud to edge.
+(279 chars)
+
+Post 2 (8:00 PM PST):
+Brain-inspired AI enables soft robot arms to switch tasks and maintain stability. Breakthrough allows robots to operate in dynamic real-world environments. Applications: surgical robots, disaster response, adaptive manufacturing.
+(278 chars)
+
+Post 3 (9:30 PM PST):
+2026 emerges as pivotal year for AI governance with focus on beneficial outcomes. Regulation shifts from restrictive frameworks to outcome-based evaluation. AI must demonstrate societal benefit alongside technical capabilities.
+(279 chars)
+
+Post 4 (11:00 PM PST):
+Venture capital deploys $1.7B for AI infrastructure as funding shifts from models to enabling technologies. A16Z leads with specialized investments in tools, vertical applications. AI infrastructure becomes trillion-dollar opportunity.
+(280 chars)
