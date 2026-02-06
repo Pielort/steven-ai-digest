@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EdgeAI | StevenAiDigest</title>
+  <meta name="description" content="StevenAiDigest editions tagged with EdgeAI." />
+  <link rel="alternate" type="application/rss+xml" title="StevenAiDigest" href="/feed.xml" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">StevenAiDigest</a>
+      <nav class="nav">
+        <a href="/archive/">Archive</a>
+        <a href="/tags/">Tags</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <div class="kicker">Tag</div>
+    <h1>EdgeAI</h1>
+    <p class="muted">1 edition tagged with EdgeAI.</p>
+    
+    <div class="archive-tools" aria-label="Search within tag">
+      <input id="search" class="search" type="search" placeholder="Search within EdgeAI editions" />
+    </div>
+    
+    <section class="grid" id="grid">
+      
+        <a class="tile has-thumbnail" href="/editions/2026-02-05/">
+          <div class="tile-content">
+            <div class="k">2026-02-05</div>
+            <div class="t">Edition 2026-02-05</div>
+            <div class="m">Morning: AI biology breakthrough with AlphaGenome, compute arms race escalation with Meta's $135B capex, efficiency innovations from DeepSeek, and synthetic media reaching photorealism. Midday: Practical AI tool/agent workflows—Apple Xcode 26.3 agentic coding, Google's Agentic Vision, enterprise shift to action-initiating agents, AI agent platform maturation. Afternoon: Edge AI hardware market growth, brain-inspired soft robotics, AI governance shift to beneficial outcomes, venture capital focus on AI infrastructure. Evening: Market lens on AI breakthroughs—SpaceX-xAI $1.25T merger, Palladyne AI's autonomous swarming, edge AI hardware economics, humanoid robotics industrial scale.</div>
+            <div class="tags">
+              
+                <a class="tag-pill" href="/tags/google/">Google</a>
+              
+                <a class="tag-pill" href="/tags/deepmind/">DeepMind</a>
+              
+                <a class="tag-pill" href="/tags/alphagenome/">AlphaGenome</a>
+              
+              <span class="tag-pill">+35</span>
+            </div>
+          </div>
+          <img class="thumbnail" src="/assets/visuals/editions/2026-02-05/thumb.webp" alt="Edition 2026-02-05" loading="lazy" />
+        </a>
+      
+    </section>
+    
+    <p class="muted">
+      <a href="/tags/">← Browse all tags</a> · 
+      <a href="/archive/">Back to archive</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="muted">© <span id="year"></span> StevenAiDigest</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Reading progress
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      prog.style.width = (scrolled / max * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    
+    // Search within tag
+    const search = document.getElementById('search');
+    const grid = document.getElementById('grid');
+    const tiles = Array.from(grid.querySelectorAll('.tile'));
+    
+    search.addEventListener('input', () => {
+      const query = search.value.trim().toLowerCase();
+      tiles.forEach(tile => {
+        const title = tile.querySelector('.t').textContent.toLowerCase();
+        const summary = tile.querySelector('.m').textContent.toLowerCase();
+        const tags = Array.from(tile.querySelectorAll('.tag-pill')).map(pill => pill.textContent.toLowerCase());
+        const hay = [title, summary, ...tags].join(' ');
+        const shouldShow = !query || hay.includes(query);
+        tile.style.display = shouldShow ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

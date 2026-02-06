@@ -1,0 +1,21 @@
+# StevenAiDigest Twitter Posts - February 6, 2026 (Midday)
+
+## Post 1 (12:30 PM)
+Claude Opus 4.6: 1M token context enables sustained enterprise agentic workflows. Leads GPT-5.2 by 144 Elo on real-world tasks. 80% of Anthropic's business now enterprise. Vertical specialization accelerates. #AI #Enterprise #Workflow #Claude
+
+## Post 2 (1:15 PM)
+GPT-5.3-Codex enables recursive AI self-improvement. 25% faster, self-debugs, preserves context mid-task. First model to assist in own development. Developer productivity projected 3-5x within 18 months. #AI #Coding #GPT5 #Development
+
+## Post 3 (2:00 PM)
+Model Context Protocol (MCP) ecosystem matures for enterprise AI integration. Google releases MCP server for docs. 30K+ agent identities, 20M+ transactions. Standardized connectivity replaces custom APIs. #AI #MCP #Integration #Enterprise
+
+## Post 4 (3:30 PM)
+February 2026 AI shift: From chatbots to workflow engines. Claude Opus 4.6 for enterprise agentic workflows. GPT-5.3-Codex for recursive development. MCP for standardized integration. Production-ready AI automation arrives. #AI #Automation #Workflow #Agents
+
+## Thread Summary
+February 2026 marks AI's transition from experimental assistants to production-ready workflow automation platforms. Three key developments:
+1. Claude Opus 4.6 enables sustained enterprise agentic workflows
+2. GPT-5.3-Codex initiates recursive improvement cycles
+3. Model Context Protocol (MCP) establishes standardized connectivity
+
+Enterprises should pilot these technologies for document analysis, software development, and tool integration workflows.

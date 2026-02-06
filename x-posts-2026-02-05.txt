@@ -55,3 +55,23 @@ Post 3 (9:30 PM PST):
 Post 4 (11:00 PM PST):
 Venture capital deploys $1.7B for AI infrastructure as funding shifts from models to enabling technologies. A16Z leads with specialized investments in tools, vertical applications. AI infrastructure becomes trillion-dollar opportunity.
 (280 chars)
+
+---
+
+X/Twitter Posts for 2026-02-05 StevenAiDigest Evening Post:
+
+Post 1 (7:30 PM PST):
+SpaceX acquires xAI in $1.25T merger—largest in history. Creates vertical integration moat: AI intelligence + physical deployment infrastructure. Competition shifts from software to integrated stacks. Regulatory scrutiny intensifies.
+(279 chars)
+
+Post 2 (9:00 PM PST):
+Palladyne AI's IntelliSwarm breakthrough unlocks autonomous defense market. Commercial swarming democratizes capabilities exclusive to superpowers. Defense procurement shifts from platforms to capabilities. $100B+ market expansion.
+(278 chars)
+
+Post 3 (10:30 PM PST):
+Edge AI hardware projected to reach $248B by 2035. Compute shifts from cloud to edge, creating infrastructure arbitrage. Semiconductor companies capture disproportionate value. Privacy regulations drive adoption.
+(279 chars)
+
+Post 4 (12:00 AM PST):
+Humanoid robotics projected to surpass $251B by 2035. Physical AI transitions from lab to industrial scale. Addresses global labor shortages, enables flexible automation. Largest new industrial market since personal computing.
+(280 chars)

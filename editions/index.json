@@ -1,11 +1,20 @@
 [
   {
+    "date": "2026-02-06",
+    "year": "2026",
+    "title": "Edition 2026-02-06",
+    "url": "/editions/2026-02-06/",
+    "summary": "Morning: Claude Opus 4.6 financial AI specialization, GPT-5.3-Codex AI self-development milestone, Stanford SleepFM disease prediction from sleep data. Midday: Practical tool/agent workflows—Claude Opus 4.6 enterprise agentic workflows, GPT-5.3-Codex recursive development, Model Context Protocol (MCP) ecosystem maturation. Vertical specialization, recursive improvement, standardized AI integration for production-ready automation.",
+    "tags": ["AI","Finance","Claude","Anthropic","Coding","OpenAI","GPT5","Healthcare","Sleep","Medicine","Stanford","Research","Breakthroughs","FinancialAI","SelfDevelopment","PreventiveHealthcare","VerticalSpecialization","RecursiveImprovement","BiomedicalPrediction","EnterpriseAI","WorkflowAutomation","ModelContextProtocol","MCP","AgenticWorkflows","Integration","DevelopmentTools"],
+    "thumbnail": "/assets/visuals/editions/2026-02-06/thumb.webp"
+  },
+  {
     "date": "2026-02-05",
     "year": "2026",
     "title": "Edition 2026-02-05",
     "url": "/editions/2026-02-05/",
-    "summary": "Morning: AI biology breakthrough with AlphaGenome, compute arms race escalation with Meta's $135B capex, efficiency innovations from DeepSeek, and synthetic media reaching photorealism. Midday: Practical AI tool/agent workflows—Apple Xcode 26.3 agentic coding, Google's Agentic Vision, enterprise shift to action-initiating agents, AI agent platform maturation.",
-    "tags": ["Google","DeepMind","AlphaGenome","Meta","Compute","DeepSeek","Efficiency","SyntheticMedia","AIvideo","Biology","Capex","Architecture","Apple","Xcode","AgenticCoding","ModelContextProtocol","Gemini","AgenticVision","WorkflowAgents","EnterpriseAI","AIAgents","Platforms"],
+    "summary": "Morning: AI biology breakthrough with AlphaGenome, compute arms race escalation with Meta's $135B capex, efficiency innovations from DeepSeek, and synthetic media reaching photorealism. Midday: Practical AI tool/agent workflows—Apple Xcode 26.3 agentic coding, Google's Agentic Vision, enterprise shift to action-initiating agents, AI agent platform maturation. Afternoon: Edge AI hardware market growth, brain-inspired soft robotics, AI governance shift to beneficial outcomes, venture capital focus on AI infrastructure. Evening: Market lens on AI breakthroughs—SpaceX-xAI $1.25T merger, Palladyne AI's autonomous swarming, edge AI hardware economics, humanoid robotics industrial scale.",
+    "tags": ["Google","DeepMind","AlphaGenome","Meta","Compute","DeepSeek","Efficiency","SyntheticMedia","AIvideo","Biology","Capex","Architecture","Apple","Xcode","AgenticCoding","ModelContextProtocol","Gemini","AgenticVision","WorkflowAgents","EnterpriseAI","AIAgents","Platforms","EdgeAI","Hardware","Robotics","Neuromorphic","Regulation","Governance","VentureCapital","Funding","Infrastructure","SpaceX","xAI","VerticalIntegration","AutonomousSystems","Defense","Semiconductors","HumanoidRobotics","Manufacturing"],
     "thumbnail": "/assets/visuals/editions/2026-02-05/thumb.webp"
   },
   {
