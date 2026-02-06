@@ -81,11 +81,11 @@ Today's morning edition covers three major AI breakthroughs that signal parallel
 3. Model Context Protocol (MCP) ecosystem matures for enterprise AI integration
 4. February 2026 AI shift: From chatbots to workflow engines for production-ready automation
 
-### Afternoon Posts (To be generated)
-- Market impact analysis of specialized AI models
-- Developer productivity projections from self-improving AI
-- Preventive healthcare economic models
-- Regulatory framework requirements
+### Afternoon Posts (Generated - 4 posts)
+1. AI chip strategy shift: NVIDIA prioritizes enterprise AI over consumer GPUs, TSMC expands to Japan
+2. Physical AI revolution: Humanoid robotics projected $251B by 2035, vision language models managing robot fleets
+3. AI regulation matures: EU AI Act implementation accelerates, $6T enterprise tech spending driven by AI infrastructure
+4. February 2026 tech innovation adjacent: AI chips, physical AI, global regulation, infrastructure spending acceleration
 
 ### Evening Posts (To be generated)
 - Competitive landscape analysis
@@ -96,17 +96,18 @@ Today's morning edition covers three major AI breakthroughs that signal parallel
 ## Content Statistics
 - **Total morning items**: 3 major breakthroughs
 - **Total midday items**: 3 workflow automation developments
-- **Sources cited**: 10+ primary sources
-- **Tags used**: AI, Finance, Claude, Anthropic, Coding, OpenAI, GPT5, Healthcare, Sleep, Medicine, Stanford, EnterpriseAI, WorkflowAutomation, ModelContextProtocol, MCP, AgenticWorkflows, Integration, DevelopmentTools
-- **X posts scheduled**: 4 morning posts + 4 midday posts
+- **Total afternoon items**: 3 tech innovation adjacent developments
+- **Sources cited**: 15+ primary sources
+- **Tags used**: AI, Finance, Claude, Anthropic, Coding, OpenAI, GPT5, Healthcare, Sleep, Medicine, Stanford, EnterpriseAI, WorkflowAutomation, ModelContextProtocol, MCP, AgenticWorkflows, Integration, DevelopmentTools, Semiconductors, NVIDIA, TSMC, Chips, Robotics, PhysicalAI, Regulation, EUAIAct, Compliance, Infrastructure, Investment, MarketTrends
+- **X posts scheduled**: 4 morning posts + 4 midday posts + 4 afternoon posts
 
 ## Next Steps for Site Update
-1. **Generate tag pages** for new tags (Claude, Opus4.6, FinancialAI, GPT5.3, Codex, SelfDevelopment, SleepFM, Stanford, PreventiveHealthcare, EnterpriseAI, WorkflowAutomation, ModelContextProtocol, MCP, AgenticWorkflows)
+1. **Generate tag pages** for new tags (Claude, Opus4.6, FinancialAI, GPT5.3, Codex, SelfDevelopment, SleepFM, Stanford, PreventiveHealthcare, EnterpriseAI, WorkflowAutomation, ModelContextProtocol, MCP, AgenticWorkflows, Semiconductors, NVIDIA, TSMC, Chips, Robotics, PhysicalAI, Regulation, EUAIAct, Compliance, Infrastructure, Investment, MarketTrends)
 2. **Update related items** system with new edition
 3. **Deploy to Netlify** for live updates
 4. **Schedule X posts** for midday content (12:30 PM, 1:15 PM, 2:00 PM, 3:30 PM PST)
-5. **Prepare afternoon content** focusing on market impact and regulatory implications
-6. **Update index.html** with midday edition (completed)
+5. **Schedule X posts** for afternoon content (4:30 PM, 5:15 PM, 6:00 PM, 7:30 PM PST)
+6. **Update index.html** with afternoon edition (completed)
 7. **Refresh feed.xml** with updated content (completed)
 
 ## Quality Assurance
