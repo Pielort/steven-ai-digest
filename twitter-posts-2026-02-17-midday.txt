@@ -1,0 +1,16 @@
+StevenAiDigest Midday X Posts - 2026-02-17 (12:00 PM PT)
+
+Post 1
+GitHub Agentic Workflows (tech preview) turns repo chores into managed automation: write intent in Markdown, compile to Actions via gh aw, run coding agents, keep writes gated via safe outputs. The breakthrough is operational guardrails, not model size. #AI #GitHub
+
+Post 2
+Workflow pattern that scales: agent proposes • PR opens • humans review. GitHub is baking this into Actions: read-only by default + constrained write paths. Implication: agents shift from copilots to pipelines without exploding risk. #DevTools
+
+Post 3
+Actionable: start with CI failure triage. Let the agent investigate logs, suggest fixes, and open a draft PR. Measure impact as time-to-resolution + queue depth reduction. Treat the workflow file like code: version it, test it, audit it. #Workflow
+
+Post 4
+Harvard/WS lens: the new moat is distribution + control. Agents inside systems with permissions, logging, and review win adoption. GitHub is productizing “continuous AI” for repos: triage, docs, tests, quality hygiene. #Automation
+
+Post 5
+Midday signal: the agent era is becoming infrastructure. Markdown-authored, guardrailed agents in GitHub Actions means every repo can run “maintenance intelligence” on schedule. Next step: standard agent KPIs (verified PRs per dollar). #AgenticAI

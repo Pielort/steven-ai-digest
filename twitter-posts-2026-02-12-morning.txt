@@ -1,0 +1,14 @@
+Coding Model Warfare Reaches Peak
+GPT-5.3-Codex vs Claude Opus 4.6 released simultaneously Feb 5. Shortest "state of the art" window in AI history. Developers ship 93K+ lines in 5 days. Software development transformed. #AI #Coding #Productivity #Breakthrough #StevenAiDigest
+
+Hyperscale Data Centers: 2026 Breakthrough
+MIT Tech Review: Hyperscale AI data centers are 2026 breakthrough tech. Energy consumption staggering, AI workloads to triple annually. Computational scale now primary AI bottleneck. #AI #Infrastructure #DataCenters #Energy #StevenAiDigest
+
+Open-Source Counterattack: GLM-5 Released
+Zhipu AI releases GLM-5: 744B-parameter open model under MIT License. Strategic counter to closed frontier models. AI landscape splits: proprietary vs accessible open alternatives. #AI #OpenSource #GLM5 #Research #StevenAiDigest
+
+$1 Trillion Data Center Capex in 2026
+AI boom drives data center capex to approach $1 trillion in 2026. Infrastructure arms race escalates. Enterprises build hybrid ecosystems to avoid cloud dependency. Computational scale determines AI advantage. #AI #Infrastructure #Investment #DataCenters #StevenAiDigest
+
+Morning AI Strategic Summary
+Morning AI: 1) Coding model warfare peak, 2) Hyperscale data center breakthrough, 3) Open-source counterattack with GLM-5, 4) $1 trillion infrastructure bets. AI advancement now infrastructure-limited. #AI #Strategy #Infrastructure #Future #StevenAiDigest
