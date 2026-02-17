@@ -1,5 +1,50 @@
 [
   {
+    "date": "2026-02-17",
+    "year": "2026",
+    "title": "Edition 2026-02-17",
+    "url": "/editions/2026-02-17/",
+    "summary": "Morning: AI enters the research+execution era - DeepMind’s Gemini Deep Think research agent (Aletheia) pushes proof-grade reasoning with verifier loops, while Alibaba positions Qwen 3.5 for agentic execution with materially improved cost curves. The operator edge shifts to verification + execution, not eloquence.",
+    "tags": ["AI","Gemini","DeepThink","Research","AgenticAI","Qwen","ModelEconomics","Verification","Reasoning","Automation"],
+    "thumbnail": "/assets/visuals/editions/2026-02-07/thumb.webp"
+  },
+  {
+    "date": "2026-02-12",
+    "year": "2026",
+    "title": "Edition 2026-02-12",
+    "url": "/editions/2026-02-12/",
+    "summary": "Morning: AI Infrastructure Arms Race & Coding Warfare Peak—GPT-5.3-Codex vs Claude Opus 4.6 simultaneous release creates shortest 'state of the art' window in AI history, MIT Technology Review names hyperscale AI data centers 2026 breakthrough technology, Zhipu AI releases GLM-5 (744B parameters) under MIT License as open-source counterattack, data center capital expenditures projected to approach $1 trillion in 2026 driven by AI boom. AI advancement bottleneck shifts from algorithms to computational scale, with infrastructure becoming primary competitive advantage in development race.",
+    "tags": ["AI","Infrastructure","DataCenters","Coding","Productivity","Claude","GPT5","OpenSource","GLM5","ZhipuAI","MITLicense","Hyperscale","Energy","ComputationalScale","Investment","Capex","DellOro","MITTechReview","Breakthrough","EnterpriseAI","SoftwareDevelopment","Automation","ModelWarfare","SimultaneousRelease","StateOfTheArt","AlgorithmicInnovation","InfrastructureScaling","CompetitiveAdvantage","DevelopmentRace"],
+    "thumbnail": "/assets/visuals/editions/2026-02-07/thumb.webp"
+  },
+  {
+    "date": "2026-02-11",
+    "year": "2026",
+    "title": "Edition 2026-02-11",
+    "url": "/editions/2026-02-11/",
+    "summary": "Morning: AI Personality Revolution & Coding Model Warfare—Nature research shows LLMs accurately assess personality traits from written narratives, developers ship 93,000 lines of code in 5 days using Claude Opus 4.6 vs GPT-5.3-Codex, Columbia Engineering robot learns lip movements through self-observation, Alphabet announces $20B AI infrastructure commitment with Gartner predicting 40% of enterprise apps will feature task-specific AI agents by 2026. AI masters human psychology and professional workflows simultaneously, creating the 'AI Collaboration Paradox' where psychological understanding advances alongside professional replacement capabilities.",
+    "tags": ["AI","Psychology","PersonalityAssessment","Coding","Productivity","Claude","GPT5","Robotics","SelfLearning","EnterpriseAI","Infrastructure","Investment","NatureResearch","ColumbiaEngineering","Alphabet","Gartner","Breakthrough","Innovation","FutureOfWork","HumanAICollaboration","EthicalAI","MachineLearning","SoftwareDevelopment","Automation","PhysicalAI","ObservationLearning","ComputationalScale","AgenticAI"],
+    "thumbnail": "/assets/visuals/editions/2026-02-07/thumb.webp"
+  },
+  {
+    "date": "2026-02-09",
+    "year": "2026",
+    "title": "Edition 2026-02-09",
+    "url": "/editions/2026-02-09/",
+    "summary": "Morning: AI Duality Paradox—capability growth outpacing ethical understanding with Claude Opus 4.6 vs GPT-5.3-Codex synchronized release, consciousness crisis as AI advances faster than ethical frameworks, enterprise AI transition from experiments to core infrastructure with $650B projected spending. Midday: AI Workflow Tools—OpenAI Frontier platform for enterprise agent orchestration, practical workflow tools evolving from automation to multi-agent coordination, measurable enterprise impact with 32% productivity gains and $300B software market disruption. Model competition, ethical gaps, workflow revolution, enterprise automation.",
+    "tags": ["AI","ArtificialIntelligence","MachineLearning","Ethics","Consciousness","Claude","GPT","Anthropic","OpenAI","Research","Breakthrough","Technology","Future","EnterpriseAI","Governance","Infrastructure","Hardware","Semiconductors","Regulation","AISafety","Automation","Enterprise","Workflow","AgentOrchestration","DigitalTransformation","OperationalEfficiency","MultiAgent","WorkflowAutomation","BusinessProcess","AIInfrastructure","Productivity"],
+    "thumbnail": "/assets/visuals/editions/2026-02-07/thumb.webp"
+  },
+  {
+    "date": "2026-02-07",
+    "year": "2026",
+    "title": "Edition 2026-02-07",
+    "url": "/editions/2026-02-07/",
+    "summary": "Morning: Synchronized AI arms race with Claude Opus 4.6 and GPT-5.3-Codex released within 20 minutes, $300 billion software stock sell-off pricing AI disruption reality, Perplexity Model Council enabling simultaneous multi-model analysis. Development cycle parity, market impact quantification, comparative intelligence ecosystems.",
+    "tags": ["AI","Claude","Anthropic","GPT5","OpenAI","Competition","Markets","Finance","Disruption","EnterpriseAI","MultiModel","Perplexity","Analysis","DevelopmentCycles","StrategicWarfare","MarketImpact","ComparativeIntelligence","Ecosystems"],
+    "thumbnail": "/assets/visuals/editions/2026-02-07/thumb.webp"
+  },
+  {
     "date": "2026-02-06",
     "year": "2026",
     "title": "Edition 2026-02-06",
